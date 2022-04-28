@@ -3,7 +3,7 @@ import styles from './PrimaryLayout.module.css';
 
 export interface IPrimaryLayout {
   sampleTextProp: string;
-  children: any;
+  children?: any;
 }
 
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
