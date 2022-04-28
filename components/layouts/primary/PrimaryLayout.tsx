@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from './PrimaryLayout.module.css';
 
 export interface IPrimaryLayout {
-  sampleTextProp: string;
+  sampleTextProp?: string;
   children?: any;
 }
 
@@ -17,6 +17,8 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   );
 };
 
-export const getPrimaryLayout = (page) => <PrimaryLayout>{page}</PrimaryLayout>;
+export const getPrimaryLayout = (page: any) => (
+  <PrimaryLayout>{page}</PrimaryLayout>
+);
 
 export default PrimaryLayout;
