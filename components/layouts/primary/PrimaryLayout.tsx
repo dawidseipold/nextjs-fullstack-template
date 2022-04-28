@@ -6,7 +6,7 @@ export interface IPrimaryLayout {
   children?: any;
 }
 
-const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
+const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }: any) => {
   return (
     <>
       <Head>
